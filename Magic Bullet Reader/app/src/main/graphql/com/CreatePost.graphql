@@ -1,0 +1,25 @@
+mutation CreatePost($address1: String!
+                      $address2: String!
+                      $city: String!
+                      $doe: String!
+                      $doi: String!
+                      $firstName: String!
+                      $lastName: String!
+                      $ssn: String!
+                      $state: String!
+                      $zip: String!
+) {
+  createPost(address1: $address1
+               address2: $address2
+               city: $city
+               doe: $doe
+               doi: $doi
+               firstName: $firstName
+               lastName: $lastName
+               ssn: $ssn
+               state: $state
+               zip: $zip
+) {
+    id
+  }
+}
